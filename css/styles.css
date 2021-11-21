@@ -1,0 +1,85 @@
+/*=========================================================
+  Base Syles
+==========================================================*/
+:root {
+  --xiketic:    #0E1023;
+  --spaceCadet: #12152B;
+  --crayola:    #FDB614;
+  --white:      #FFFFFF;
+}
+
+html {
+  font-size: 16px;;
+}
+
+body {
+    background: var(--spaceCadet);
+    color: var(--crayola);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo Black', sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p, a {
+  font-family: 'Archivo Narrow', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 10px; 
+} 
+
+a {
+  color: var(--white);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*=========================================================
+  Player Card 
+==========================================================*/
+.player-card {
+  display: flex;
+  background-color: var(--xiketic);
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.player-card + .player-card {
+  margin-top: 40px;
+}
+
+.player-content {
+  padding: 80px 15px 15px;
+}
+
+.player-img {
+  position: relative;
+}
+
+.player-jersey {
+  display: inline-block;
+  position: absolute;
+  font-size: 2.5rem;
+  color: var(--white);
+  background-color: var(--crayola);
+  font-family: 'Archivo Black', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*=========================================================
+  Form Select
+==========================================================*/
